@@ -61,7 +61,7 @@ const categoryData: CategoryData = {
       subtitle: `Population: ${planet.population !== "unknown" ? Number(planet.population).toLocaleString() : "Unknown"}`,
       details: [
         { label: "Climate", value: planet.climate },
-        { label: "Terrain", value: planet.terrain.split(", ")[0] },
+        { label: "Terrain", value: planet?.terrain?.split(", ")[0] },
       ],
     }),
   },
